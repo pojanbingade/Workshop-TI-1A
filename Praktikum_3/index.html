@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulir Pendaftaran</title>
+</head>
+<body>
+
+<div class="container">
+    <h2>Formulir Pendaftaran</h2>
+
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td>Nama:</td>
+                <td><input type="text" id="nama" name="nama"></td>
+            </tr>
+            <tr>
+                <td>Kelas:</td>
+                <td><input type="text" id="kelas" name="kelas"></td>
+            </tr>
+            <tr>
+                <td>Program Studi:</td>
+                <td>
+                    <select id="program_studi" name="program_studi">
+                        <option value="Teknik Informatika">Teknik Informatika</option>
+                        <option value="Teknik Rekayasa Multimedia">Teknik Rekayasa Multimedia</option>
+                        <option value="Teknik Rekayasa Komputer Jaringan">Teknik Rekayasa Komputer Jaringan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Alamat:</td>
+                <td colspan="2" class="address">
+                    <label for="provinsi">Provinsi:</label>
+                    <select id="provinsi" name="provinsi"> 
+                        <option value="Aceh" >Aceh</option>
+                        <option value="Sumatera Utara">Sumatera Utara</option>
+                        <option value="Sumatera Barat">Sumatera Barat</option>
+                        <option value="Riau">Riau</option>
+                        <option value="Kepulauan Riau">Kepulauan Riau</option>
+                        <option value="Jambi">Jambi</option>
+                        <option value="Bengkulu">Bengkulu</option>
+                        <option value="Sumatera Selatan">Sumatera Selatan</option>
+                        <option value="Kepulauan Bangka Belitung">Kepulauan Bangka Belitung</option>
+                        <option value="Lampung">Lampung</option>
+                        <option value="Banten">Banten</option>
+                        <option value="Jawa Barat">Jawa Barat</option>
+                        <option value="Jakarta">Jakarta</option>
+                        <option value="Jawa Tengah">Jawa Tengah</option>
+                        <option value="DI Yogyakarta">DI Yogyakarta</option>
+                        <option value="Jawa Timur">Jawa Timur</option>
+                        <option value="Bali">Bali</option>
+                        <option value="Nusa Tenggara Barat">Nusa Tenggara Barat</option>
+                        <option value="Nusa Tenggara Timur">Nusa Tenggara Timur</option>
+                        <option value="Kalimantan Barat">Kalimantan Barat</option>
+                        <option value="Kalimantan Tengah">Kalimantan Tengah</option>
+                        <option value="Kalimantan Selatan">Kalimantan Selatan</option>
+                        <option value="Kalimantan Timur">Kalimantan Timur</option>
+                        <option value="Kalimantan Utara">Kalimantan Utara</option>
+                        <option value="Gorontalo">Gorontalo</option>
+                        <option value="Sulawesi Utara">Sulawesi Utara</option>
+                        <option value="Sulawesi Barat">Sulawesi Barat</option>
+                        <option value="Sulawesi Tengah">Sulawesi Tengah</option>
+                        <option value="Sulawesi Selatan">Sulawesi Selatan</option>
+                        <option value="Sulawesi Tenggara">Sulawesi Tenggara</option>
+                        <option value="Maluku">Maluku</option>
+                        <option value="Maluku Utara">Maluku Utara</option>
+                        <option value="Papua Barat">Papua Barat</option>
+                        <option value="Papua">Papua</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2" class="address">
+                    <label for="kota">Kota:</label>
+                    <select id="kota" name="kota">
+                        <option value="Lhokseumawe">Lhokseumawe</option>
+                        <option value="Banda Aceh">Banda Aceh</option>
+                        <option value="Sabang">Sabang</option>
+                        <option value="Langsa">Langsa</option>
+                        <option value="Subulussalam">Subulussalam</option>
+                        <option value="Aceh Barat">Aceh Barat</option>
+                        <option value="Aceh Barat Daya">Aceh Barat Daya</option>
+                        <option value="Aceh Besar">Aceh Besar</option>
+                        <option value="Aceh Jaya">Aceh Jaya</option>
+                        <option value="Aceh Selatan">Aceh Selatan</option>
+                        <option value="Aceh Singkil">Aceh Singkil</option>
+                        <option value="Aceh Tamiang">Aceh Tamiang</option>
+                        <option value="Aceh Tengah">Aceh Tengah</option>
+                        <option value="Aceh Tenggara">Aceh Tenggara</option>
+                        <option value="Aceh Timur">Aceh Timur</option>
+                        <option value="Aceh Utara">Aceh Utara</option>
+                        <option value="Bener Meriah">Bener Meriah</option>
+                        <option value="Bireuen">Bireuen</option>
+                        <option value="Gayo Lues">Gayo Lues</option>
+                        <option value="Nagan Raya">Nagan Raya</option>
+                        <option value="Pidie">Pidie</option>
+                        <option value="Pidie Jaya">Pidie Jaya</option>
+                        <option value="Simeulue">Simeulue</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2" class="address">
+                    <span>Alamat:</span><br>
+                    <textarea name="deskripsi_alamat" cols="30" rows="2"></textarea>
+                </td>
+            </tr>
+        </table>
+        
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
