@@ -7,6 +7,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .navbar-brand i {
+            margin-right: 10px;
+        }
+        .card-header, .modal-header {
+            background-color: pink;
+            color: white;
+        }
+        .card-body, .modal-body {
+            background-color: #ffffff;
+        }
+        .btn-custom {
+            background-color:pink;
+            color: white;
+            border-radius: 50px;
+        }
+        .btn-custom:hover {
+            background-color: pink;
+            color: white;
+        }
+        .modal-content {
+            border-radius: 15px;
+        }
+        .dropdown-menu .dropdown-item i {
+            margin-right: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,18 +48,16 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <div class="dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="bi bi-list"></i> Beranda
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#"><i class="bi bi-house-heart-fill"> </i>home</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="bi bi-envelope-open-heart"> </i>email</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="bi bi-hourglass-split"> </i>history</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="bi bi-backspace-fill"> </i>back</a></li>
-                            </ul>
-                        </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-list"></i> Beranda
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-house-heart-fill"></i> Home</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-envelope-open-heart"></i> Email</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-hourglass-split"></i> History</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-backspace-fill"></i> Back</a></li>
+                        </ul>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
@@ -60,27 +88,35 @@
                         </div>
                         <div class="card-body">
                             <p class="card-text">Jelajahi fitur dan konten menarik di platform kami. Are you ready for a new experience!</p>
-                            <a href="#" class="btn btn-light btn-lg btn-rounded"><i class="bi bi-search-heart-fill"></i> Mau cari apa?</a>
                         </div>
+                    </div>
+
+                    <!-- Search Button -->
+                    <div class="mt-4 text-center">
+                        <a href="#" class="btn btn-light btn-lg btn-custom" data-bs-toggle="modal" data-bs-target="#searchModal">
+                            <i class="bi bi-search-heart-fill"></i> Mau cari apa?
+                        </a>
                     </div>
 
                     <div class="mt-5">
                         <h2 class="text-center">Artikel Terbaru</h2>
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Explanation Text</h5>
-                                <p class="card-text">Sederhananya, descriptive text itu berisi mengenai penjelasan yang menjawab pertanyaan “what” atau “apa”. Nah, sementara, explanation text adalah jenis teks untuk menjawab pertanyaan “how”, alias bagaimana. Jadi, teks eksplanasi berfungsi untuk menjelaskan bagaimana suatu hal bisa terjadi, sifatnya logis dan mendetail.</p>
+                                <h5 class="card-title">SIKSA NERAKA</h5>
+                                <p class="card-text">Siksa neraka adalah salah satu konsep dalam agama Islam yang diyakini sebagai bentuk hukuman bagi orang-orang yang melakukan dosa di dunia. Al-Qur'an, kitab suci umat Islam, secara jelas menggambarkan macam-macam siksa neraka dan penyebabnya.
+
+                                    Dalam Al-Qur'an, disebutkan bahwa siksa neraka memiliki banyak macam dan tingkatan, mulai dari siksaan ringan hingga berat sesuai dengan dosa-dosa yang diperbuat oleh manusia. Beberapa siksaan tersebut termasuk siksa api, siksa air yang mendidih, dan siksaan lainnya yang sangat mengerikan. Penyebab utama dari siksa neraka ini juga dijelaskan dalam Al-Qur'an, seperti kekafiran, kezaliman, dosa-dosa besar, dan lain sebagainya.</p>
                                 <a href="#" class="btn btn-primary">Baca selengkapnya</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Profile Modal -->
-                    <div class="modal fade modal-xl" id="profileModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
+                    <div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Profil</h1>
+                                    <h5 class="modal-title" id="exampleModalLabel">Profil</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -95,15 +131,16 @@
                                         </div>
                                         <div class="mb-3">
                                             <label for="address" class="form-label">Alamat</label>
-                                            <textarea class="form-control" id="address" rows="3"></textarea>
+                                            <textarea class="form-control" id="address" rows="3" placeholder="Alamat Anda"></textarea>
                                         </div>
                                         <div class="mb-3">
                                             <label for="hobbySelect" class="form-label">Hobi</label>
                                             <select class="form-select" id="hobbySelect">
-                                                <option selected>Football</option>
-                                                <option value="1">Membaca</option>
-                                                <option value="2">Renang</option>
-                                                <option value="3">Menonton</option>
+                                                <option selected>Pilih hobi...</option>
+                                                <option value="1">Football</option>
+                                                <option value="2">Membaca</option>
+                                                <option value="3">Renang</option>
+                                                <option value="4">Menonton</option>
                                             </select>
                                         </div>
                                     </form>
@@ -118,10 +155,10 @@
 
                     <!-- Change Password Modal -->
                     <div class="modal fade" id="changePasswordModal" tabindex="-1" aria-labelledby="changePasswordLabel" aria-hidden="true">
-                        <div class="modal-dialog">
+                        <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="changePasswordLabel">Change Password</h1>
+                                    <h5 class="modal-title" id="changePasswordLabel">Change Password</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -150,10 +187,10 @@
 
                     <!-- Settings Modal -->
                     <div class="modal fade" id="settingsModal" tabindex="-1" aria-labelledby="settingsLabel" aria-hidden="true">
-                        <div class="modal-dialog">
+                        <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="settingsLabel">Settings</h1>
+                                    <h5 class="modal-title" id="settingsLabel">Settings</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -184,10 +221,10 @@
 
                     <!-- Logout Modal -->
                     <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutLabel" aria-hidden="true">
-                        <div class="modal-dialog">
+                        <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="logoutLabel">Logout</h1>
+                                    <h5 class="modal-title" id="logoutLabel">Logout</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -201,6 +238,41 @@
                         </div>
                     </div>
                     
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="searchModalLabel">Mau cari apa?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="searchInput" class="form-label">Kata Kunci</label>
+                            <input type="text" class="form-control" id="searchInput" placeholder="Kata kunci pencarian...">
+                        </div>
+                        <!-- Tambahkan elemen formulir sesuai kebutuhan -->
+                        <!-- Contoh: -->
+                        <!-- <div class="mb-3">
+                            <label for="searchCategory" class="form-label">Kategori</label>
+                            <select class="form-select" id="searchCategory">
+                                <option selected>Pilih kategori...</option>
+                                <option value="1">Kategori 1</option>
+                                <option value="2">Kategori 2</option>
+                                <option value="3">Kategori 3</option>
+                            </select>
+                        </div> -->
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button type="button" class="btn btn-primary">Cari</button>
                 </div>
             </div>
         </div>

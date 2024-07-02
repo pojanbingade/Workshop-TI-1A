@@ -1,0 +1,64 @@
+body {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
+  }
+  
+  .bg-custom-grey {
+    background-color: #2C2C2C; /* Dark grey background */
+    color: #ffffff; /* Light text color */
+  }
+  
+  .navbar {
+    background-color: #1F1F1F; /* Slightly lighter than body */
+  }
+  
+  .navbar-brand {
+    color: #ffffff !important; /* White text for brand */
+  }
+  
+  .nav-link {
+    color: #b0b0b0 !important; /* Light grey for nav links */
+  }
+  
+  .nav-link:hover {
+    color: #ffffff !important; /* White on hover */
+  }
+  
+  .dropdown-menu {
+    background-color: #2C2C2C; /* Match sidebar */
+  }
+  
+  .dropdown-item {
+    color: #b0b0b0 !important; /* Light grey text */
+  }
+  
+  .dropdown-item:hover {
+    background-color: #404040; /* Slightly lighter grey */
+    color: #ffffff !important; /* White text on hover */
+  }
+  
+  .offcanvas-header,
+  .offcanvas-body {
+    background-color: #2C2C2C; /* Match sidebar */
+    color: #ffffff;
+  }
+  
+  .nav-pills .nav-link.active {
+    background-color: #ffffff !important; /* White active link */
+    color: #121212 !important; /* Dark text for active link */
+  }
+  
+  .nav-pills .nav-link {
+    margin: 0.2rem 0; /* Spacing between links */
+  }
+  
+  .content {
+    background-color: #1F1F1F; /* Match navbar */
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  .lead {
+    color: #b0b0b0; /* Light grey for lead text */
+  }
+  
