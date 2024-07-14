@@ -4,13 +4,13 @@
 
 Ini adalah aplikasi yang memudahkan para peternak atau warga lokal untuk memesan sapi dengan mudah secara online.
 
-# Admin
+# Admin (1)
 - Dapat keluar/masuk dari sistem dengan aman
 - Dapat mengedit, menghapus, membuat akun pengguna (pembeli, peternak)
 - Dapat mengatur hak akses untuk setiap penggunanya
 - Dapat melihat semua riwayat pembayaran dari semua pemesanan
 
-# Peternak
+# Peternak (2)
 - Dapat membuat akun baru dengan informasi dasar
 - Dapat masuk/keluar dari akunnya dengan aman
 - Dapat mengedit informasi profil
@@ -20,7 +20,7 @@ Ini adalah aplikasi yang memudahkan para peternak atau warga lokal untuk memesan
 - Dapat mengelola status ketersediaan sapi
 - Dapat berkomunikasi dengan pembeli melalui sistem pesan internal
 
-# Pembeli
+# Pembeli (3)
 - Dapat membuat akun baru dengan informasi dasar
 - Dapat masuk/keluar dari akunnya dengan aman
 - Dapat mengedit informasi profil
@@ -29,4 +29,21 @@ Ini adalah aplikasi yang memudahkan para peternak atau warga lokal untuk memesan
 - Dapat melihat riwayat pembelian mereka
 - Dapat mengatur privasi akun
 - Dapat menghubungi layanan pelanggan
+
+
+# Admin (1)
+- report
+- user
+- daftar sapi
+- pesanan
+
+# Peternak (2)
+-daftar sapi
+-pesanan
+
+# Pembeli (3)
+-pesanan
+-daftar sapi
+
+
 
